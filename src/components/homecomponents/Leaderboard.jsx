@@ -68,6 +68,7 @@ export default function Leaderboard({ leaderboard }) {
             onMouseEnter={(event) => handleMouseEnter(entry, event)}
             onMouseLeave={handleMouseLeave}
             className="relative bg-white transition-colors duration-300 hover:bg-whimsipink"
+            aria-label={`Story: ${entry.title}, Likes: ${entry.like_count}`}
           >
             <Avatar
               variant="circular"

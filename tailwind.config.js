@@ -14,12 +14,12 @@ export default withMT({
         },
       },
       fontFamily: {
-        heading: ['Karla', 'sans-serif'],
-        body: ['Merriweather', 'sans-serif'],
-        norican: ['Norican', 'cursive'],
-        poiret: ['Poiret One', 'cursive'],
-        croissant: ['Croissant One', 'cursive'],
-        merienda: ['Merienda', 'cursive'],
+        heading: ['Arial', 'sans-serif'],
+        body: ['Arial', 'sans-serif'],
+        norican: ['Arial', 'cursive'],
+        poiret: ['Arial', 'cursive'],
+        croissant: ['Arial', 'cursive'],
+        merienda: ['Arial', 'cursive'],
       },
       colors: {
         whimsipink: '#F4E3ED',

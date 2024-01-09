@@ -35,7 +35,7 @@ export default function Search({
     <div className="relative flex w-full max-w-[24rem]">
       <Input
         type="Search"
-        label="Search"
+        label="Search Stories"
         value={search}
         onChange={onChange}
         icon="non"
