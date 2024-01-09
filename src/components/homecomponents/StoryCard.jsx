@@ -66,10 +66,11 @@ export default function StoryCard({
     <Card className="w-full flex-row p-2 mt-4 shadow-lg justify-between items-center justify-self-center bg-cover" style={{ width: '96%', backgroundImage: `url(${cardBG})`, clipPath: 'polygon(59% 2%, 68% 3%, 74% 0, 83% 2%, 90% 3%, 100% 0, 99% 16%, 100% 37%, 99% 53%, 98% 68%, 100% 100%, 83% 97%, 74% 97%, 63% 100%, 54% 96%, 44% 100%, 37% 98%, 28% 100%, 17% 100%, 7% 96%, 0 100%, 1% 71%, 0 43%, 1% 0, 4% 2%, 18% 0, 31% 3%, 48% 0)' }}>
       <CardHeader floated={false} style={{ margin: '2%' }}>
         <img
-          className="h-96 object-contain m-0 object-cover relative"
+          className="h-96 object-contain m-0 relative"
           style={{ height: '200px' }}
           src={story.image_url}
           alt={story.title}
+          loading="lazy"
         />
         <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
       </CardHeader>
