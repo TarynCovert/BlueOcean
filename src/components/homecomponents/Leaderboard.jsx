@@ -33,7 +33,7 @@ export default function Leaderboard({ leaderboard }) {
         : entry.summary;
       const content = (
         <div>
-          <Typography className="font-croissant" variant="h6" color="gray" style={{ textDecoration: 'underline' }}>
+          <Typography className="font-arial" variant="h6" color="gray" style={{ textDecoration: 'underline' }}>
             Description:
           </Typography>
           <Typography className="font-serif" color="gray">
@@ -59,7 +59,7 @@ export default function Leaderboard({ leaderboard }) {
 
   return (
     <Card style={{ maxWidth: '320px', backgroundImage: `url(${rightPanel})`, backgroundRepeat: 'round' }} className="h-full rounded-none rounded-r-xl">
-      <span style={{ fontSize: '20px' }} className="font-semibold font-croissant underline self-center mb-4 pt-5">All Time Top 10</span>
+      <span style={{ fontSize: '20px' }} className="font-semibold font-arial underline self-center mb-4 pt-5">All Time Top 10</span>
       <List>
         {leaderboard.map((entry) => (
           <ListItem
@@ -68,7 +68,7 @@ export default function Leaderboard({ leaderboard }) {
             onMouseEnter={(event) => handleMouseEnter(entry, event)}
             onMouseLeave={handleMouseLeave}
             className="relative bg-white transition-colors duration-300 hover:bg-whimsipink"
-            aria-label={`Story: ${entry.title}, Likes: ${entry.like_count}`}
+            aria-label={`Story: ${entry.title}`}
           >
             <Avatar
               variant="circular"
@@ -80,7 +80,7 @@ export default function Leaderboard({ leaderboard }) {
               <div className="absolute h-full w-full inset-0 bg-cover" style={{ backgroundImage: `url(${entry.thumbnail_url})` }} />
             </ListItemPrefix>
             <div>
-              <Typography className="font-croissant" variant="h6" color="gray">
+              <Typography className="font-arial" variant="h6" color="gray">
                 {entry.title}
               </Typography>
             </div>

@@ -67,7 +67,7 @@ export default function StoryCard({
       <CardHeader floated={false} style={{ margin: '2%' }}>
         <img
           className="h-96 object-contain m-0 object-cover relative"
-          style={{ maxHeight: '25vh' }}
+          style={{ height: '200px' }}
           src={story.image_url}
           alt={story.title}
         />
